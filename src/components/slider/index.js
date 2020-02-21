@@ -31,10 +31,10 @@ function Slider (props) {
         <div className="swiper-wrapper">
           {bannerList.map (slider => {
             return (
-              <div className="swiper-slide" key={slider.imageUrl}>
+              <div className="swiper-slide" key={slider.imageUrl || slider.pic}>
                 <div className="slider-nav">
                   <img
-                    src={slider.imageUrl}
+                    src={slider.imageUrl || slider.pic}
                     width="100%"
                     height="100%"
                     alt="推荐"
