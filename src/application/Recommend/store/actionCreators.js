@@ -21,7 +21,6 @@ export const getBannerList = () => {
   return dispatch => {
     getBannerRequest ()
       .then (data => {
-        console.log(data);
         const action = changeBannerList (data.banners);
         dispatch (action);
       })
@@ -34,7 +33,6 @@ export const getRecommendList = () => {
   return dispatch => {
     getRecommendListRequest ()
       .then (data => {
-        console.log(data);
         dispatch (changeRecommendList (data.result));
         dispatch (changeEnterLoading (false)); //改变loading
       })
