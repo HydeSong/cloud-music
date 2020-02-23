@@ -43,10 +43,10 @@ function Rank (props) {
   const renderRankList = (list, global) => {
     return (
       <List globalRank={global}>
-        {list.map (item => {
+        {list.map ((item, index) => {
           return (
             <ListItem
-              key={item.coverImgId - Math.random()*1000}
+              key={item.coverImgId + "" + index}
               tracks={item.tracks}
               onClick={() => enterDetail (item)}
             >
