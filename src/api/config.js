@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const baseUrl = 'http://134.175.129.160:3000';
+export const baseUrl = 'https://netease-cloud-music-api-three-mu.vercel.app';
 
 //axios 的实例及拦截器配置
 const axiosInstance = axios.create ({
