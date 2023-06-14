@@ -5,7 +5,7 @@ var port = process.env.PORT || 8010;
 var app = express ();
 // 开启 gzip 压缩
 app.use (compression ());
-app.use (express.static ('./build'));
+app.use (express.static ('./_site'));
 module.exports = app.listen (port, function (err) {
   if (err) {
     console.log (err);
